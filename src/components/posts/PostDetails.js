@@ -20,6 +20,7 @@ class PostDetails extends Component {
   loadPost = async () => {
     const { match: { params } } = this.props;
     const post = await api.Posts.findOne(params.id);
+    
     if (!this.shoudCancel) {
       this.setState({ post });
     }

@@ -44,7 +44,7 @@ class AddPost extends Component {
           placeholder="What's on your mind?"
           className="AddPost-input" />
 
-        <button type="button" onClick={this.handleAdd}>Post</button>
+         <button type="button" onClick={this.handleAdd}>Post</button>
       </form>
     )
   }

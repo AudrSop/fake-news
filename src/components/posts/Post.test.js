@@ -1,9 +1,10 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { MemoryRouter } from "react-router-dom";
+import { shallow } from 'enzyme';
 import Post from './Post';
 
 it('renders without crashing', () => {
-  const wrapper = mount(
+  const wrapper = shallow(
     <Post post={{ title: 'Trump', body: 'Build a wall' }} />
   );
   expect(wrapper.find('.Post-title').text()).toContain('Trump');
